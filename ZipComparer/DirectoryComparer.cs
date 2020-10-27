@@ -27,7 +27,7 @@ namespace DirectoryComparer
 
             if (missingFromNew.Count() > 0)
             {
-                Console.WriteLine("These files were in OldProjectDirectory but not in the NewProjectDirectory:");
+                Console.WriteLine($"These files were in {oldDirectoryPath} but not in the {newDirecotryPath}:");
                 foreach (string item in missingFromNew)
                 {
                     Console.Write($"{item}, ");
@@ -37,7 +37,7 @@ namespace DirectoryComparer
 
             if (missingFromOld.Count() > 0)
             {
-                Console.WriteLine("These files were in NewProjectDirectory but not in the OldProjectDirectory:");
+                Console.WriteLine($"These files were in {newDirecotryPath} but not in the {oldDirectoryPath}:");
                 foreach (string item in missingFromOld)
                 {
                     Console.Write($"{item}, ");
